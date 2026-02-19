@@ -1587,7 +1587,6 @@
       border-radius: 12px;
       padding: 40px;
       position: relative;
-      overflow: hidden;
     }
 
     .franchise-card::after {
@@ -1681,7 +1680,6 @@
       font-weight: 600;
       color: var(--cream);
       text-align: right;
-      white-space: nowrap;
     }
 
     .fdata-value.highlight {
@@ -2880,8 +2878,76 @@
         display: none;
       }
 
+      .franchise-inner {
+        gap: 32px;
+      }
+
+      .franchise-card {
+        padding: 14px;
+        border-radius: 8px;
+      }
+
       .franchise-card-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+
+      .franchise-data-item {
+        flex-direction: column;
+        gap: 1px;
+        padding: 6px 0;
+      }
+
+      .fdata-label {
+        font-size: 0.72rem;
+      }
+
+      .fdata-value {
+        font-size: 0.78rem;
+        text-align: left;
+      }
+
+      .fdata-value.highlight {
+        font-size: 0.85rem;
+      }
+
+      .franchise-options-row {
+        flex-direction: column;
+        gap: 6px;
+        margin-top: 14px;
+      }
+
+      .franchise-option-pill {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+      }
+
+      .franchise-desc {
+        font-size: 0.82rem;
+      }
+
+      .benefit-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .benefit-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .benefit-title {
+        font-size: 0.75rem;
+      }
+
+      .benefit-desc {
+        font-size: 0.7rem;
+      }
+
+      .franchise-text .btn {
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 12px 14px;
       }
 
       .footer-privacy-title {
