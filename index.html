@@ -1099,10 +1099,12 @@
       padding: 8px 20px;
       border-radius: 5px;
       color: var(--muted);
-      cursor: none;
+      cursor: pointer;
       transition: all 0.2s;
       border: none;
       background: none;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
     }
 
     .menu-tab.active {
@@ -3455,7 +3457,7 @@
   ============================================================ -->
   <nav class="nav" id="nav">
     <a href="#inicio" class="nav-logo">
-      <img src="https://images.rappi.com.mx/restaurants_logo/logo-1737566144593.png"
+      <img src="images/logo.png"
            alt="Take A Wok"
            class="nav-logo-img"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
@@ -3531,7 +3533,7 @@
         <div class="hero-img-frame">
           <div class="hero-img-main-wrap">
             <img
-              src="https://images.rappi.com.mx/products/431700a3-58d0-45cd-8c32-2d2330cb7df2.jpeg"
+              src="images/hero-food.jpeg"
               alt="Dragon Wok — Take A Wok"
               class="hero-img-main"
               loading="eager"
@@ -3589,7 +3591,7 @@
     <div class="about-visual reveal">
       <div class="about-image-wrap">
         <img
-          src="https://images.rappi.com.mx/restaurants_background/home-1737566146981.png"
+          src="images/about-bg.png"
           alt="Take A Wok — comida wok fresca en Ciudad de México"
           class="about-photo"
           loading="lazy"
@@ -3597,7 +3599,7 @@
         />
         <!-- Fallback: best real food photo we have from menu -->
         <img
-          src="https://images.rappi.com.mx/products/431700a3-58d0-45cd-8c32-2d2330cb7df2.jpeg"
+          src="images/hero-food.jpeg"
           alt="Dragon Wok — Take A Wok"
           class="about-photo-fallback"
           loading="lazy"
@@ -3606,7 +3608,7 @@
         <!-- Overlay badge -->
         <div class="about-photo-badge">
           <img
-            src="https://images.rappi.com.mx/restaurants_logo/logo-1737566144593.png"
+            src="images/logo.png"
             alt="Take A Wok logo"
             style="height:36px; width:auto; object-fit:contain;"
             onerror="this.parentElement.innerHTML='TAKE A WOK';"
@@ -3744,7 +3746,7 @@
       <!-- Chicken Wok -->
       <div class="menu-card active reveal" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/3a1b191b-2055-4153-a717-549e85868b68.jpeg"
+          <img src="images/especial-1.jpeg"
                alt="Chicken Wok" loading="lazy" />
           <span class="menu-card-badge">Popular</span>
         </div>
@@ -3763,7 +3765,7 @@
       <!-- Dragon Wok -->
       <div class="menu-card active reveal reveal-delay-1" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/431700a3-58d0-45cd-8c32-2d2330cb7df2.jpeg"
+          <img src="images/hero-food.jpeg"
                alt="Dragon Wok" loading="lazy" />
           <span class="menu-card-badge" style="background: var(--gold); color: var(--black);">Chef's Pick</span>
         </div>
@@ -3782,7 +3784,7 @@
       <!-- Teriyaki Wok -->
       <div class="menu-card active reveal reveal-delay-2" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/88bca6bf-e597-4b20-960d-d859eb21d4ff.jpeg"
+          <img src="images/especial-2.jpeg"
                alt="Teriyaki Wok" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3800,7 +3802,7 @@
       <!-- Bangwok -->
       <div class="menu-card active reveal reveal-delay-3" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/62c30a2c-7e60-40fc-bc5a-e6b87d5c013f.jpeg"
+          <img src="images/especial-3.jpeg"
                alt="Bangwok" loading="lazy" />
           <span class="menu-card-badge" style="background: #1a5c8a; color: white;">Mar</span>
         </div>
@@ -3819,7 +3821,7 @@
       <!-- Wok al Chipotle -->
       <div class="menu-card active reveal" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/3850549a-60a8-4e23-9618-5eff146f1901.jpeg"
+          <img src="images/arma-1.jpeg"
                alt="Wok al Chipotle" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3837,7 +3839,7 @@
       <!-- Shanghái Wok -->
       <div class="menu-card active reveal reveal-delay-1" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/6a51bb8a-d42e-46b0-8780-67502fb095d2.jpeg"
+          <img src="images/arma-2.jpeg"
                alt="Shanghái Wok" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3855,7 +3857,7 @@
       <!-- Pork Wok -->
       <div class="menu-card active reveal reveal-delay-2" data-category="especiales">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/753934ac-d63a-4f8b-88f0-c165fd5611e3.jpeg"
+          <img src="images/arma-3.jpeg"
                alt="Pork Wok" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3875,7 +3877,7 @@
       <!-- Wok Ármalo a Tu Gusto -->
       <div class="menu-card reveal" data-category="arma">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/029b197e-3c3a-4c6a-b893-ab5f51c599e5.png"
+          <img src="images/extras-1.png"
                alt="Wok Ármalo a Tu Gusto" loading="lazy" />
           <span class="menu-card-badge" style="background: var(--gold); color: var(--black);">Estrella</span>
         </div>
@@ -3894,7 +3896,7 @@
       <!-- Arroz Frito -->
       <div class="menu-card reveal reveal-delay-1" data-category="arma">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/7b93f449-aa60-4e2c-8379-b82c2a90b6e8.jpeg"
+          <img src="images/extras-2.jpeg"
                alt="Arroz Frito" loading="lazy" />
           <span class="menu-card-badge">Popular</span>
         </div>
@@ -3913,7 +3915,7 @@
       <!-- Veggie Fit Wok -->
       <div class="menu-card reveal reveal-delay-2" data-category="arma">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/89600362-f00e-43b1-94f8-d09650b467ac.jpeg"
+          <img src="images/extras-3.jpeg"
                alt="Veggie Fit Wok" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3934,7 +3936,7 @@
       <!-- Take a Tori -->
       <div class="menu-card reveal" data-category="extras">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/1083b6bd-5d6b-436d-bc31-e9196702c056.jpeg"
+          <img src="images/bebidas-1.jpeg"
                alt="Take a Tori" loading="lazy" />
           <span class="menu-card-badge" style="background: var(--gold); color: var(--black);">Especial</span>
         </div>
@@ -3953,7 +3955,7 @@
       <!-- Thai Wings -->
       <div class="menu-card reveal reveal-delay-1" data-category="extras">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/e99dc4e1-9a53-4c40-aa19-3da37047739c.jpeg"
+          <img src="images/bebidas-2.jpeg"
                alt="Thai Wings" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -3971,7 +3973,7 @@
       <!-- Take a Sup -->
       <div class="menu-card reveal reveal-delay-2" data-category="extras">
         <div class="menu-card-img">
-          <img src="https://images.rappi.com.mx/products/d99ca935-911c-4b70-9950-c8b1fb8f3588.jpeg"
+          <img src="images/bebidas-3.jpeg"
                alt="Take a Sup" loading="lazy" />
         </div>
         <div class="menu-card-body">
@@ -4500,7 +4502,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <img
-          src="https://images.rappi.com.mx/restaurants_logo/logo-1737566144593.png"
+          src="images/logo.png"
           alt="Take A Wok"
           style="height:52px; width:auto; object-fit:contain; margin-bottom:4px;"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
@@ -4662,20 +4664,26 @@
     const tabs = document.querySelectorAll('.menu-tab');
     const cards = document.querySelectorAll('.menu-card');
 
+    function switchTab(tab) {
+      const category = tab.dataset.tab;
+
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      cards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.classList.add('active');
+        } else {
+          card.classList.remove('active');
+        }
+      });
+    }
+
     tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const category = tab.dataset.tab;
-
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-
-        cards.forEach(card => {
-          if (card.dataset.category === category) {
-            card.classList.add('active');
-          } else {
-            card.classList.remove('active');
-          }
-        });
+      tab.addEventListener('click', () => switchTab(tab));
+      tab.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        switchTab(tab);
       });
     });
 
