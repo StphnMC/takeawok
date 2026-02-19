@@ -52,6 +52,8 @@
       line-height: 1.6;
       overflow-x: hidden;
       cursor: none;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
 
     a {
@@ -2557,23 +2559,201 @@
     /* ---- Small mobile ---- */
     @media (max-width: 400px) {
       :root {
-        --gutter: 14px;
+        --gutter: 12px;
       }
 
       .hero-h1 {
-        font-size: clamp(40px, 13vw, 56px);
+        font-size: clamp(32px, 13vw, 56px);
       }
 
       .hero-tag {
-        font-size: 0.6rem;
+        font-size: 0.58rem;
+        padding: 5px 10px 5px 8px;
+      }
+
+      .hero-sub {
+        font-size: 0.82rem;
+      }
+
+      .hero-pill {
+        font-size: 0.58rem;
+        padding: 3px 8px;
       }
 
       .section-title {
-        font-size: clamp(32px, 9vw, 44px);
+        font-size: clamp(28px, 9vw, 44px);
+      }
+
+      .section-label {
+        font-size: 0.62rem;
+      }
+
+      .section-label::before {
+        width: 18px;
+      }
+
+      .about-stat-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-stat strong {
+        font-size: 1.3rem;
+      }
+
+      .about-stat small {
+        font-size: 0.62rem;
+      }
+
+      .about-feature {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .feature-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .menu-tabs {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .menu-tab {
+        font-size: 0.65rem;
+        padding: 8px 4px;
+      }
+
+      .menu-card-name {
+        font-size: 1.1rem;
+      }
+
+      .menu-card-desc {
+        font-size: 0.78rem;
+      }
+
+      .menu-card-price {
+        font-size: 1.3rem;
+      }
+
+      .menu-card-body {
+        padding: 14px 14px 18px;
+      }
+
+      .delivery-app {
+        padding: 12px;
+        gap: 10px;
+      }
+
+      .app-logo {
+        width: 40px;
+        height: 32px;
+        border-radius: 6px;
+        padding: 0 6px;
+      }
+
+      .app-info strong {
+        font-size: 0.8rem;
+      }
+
+      .app-info span {
+        font-size: 0.7rem;
+      }
+
+      .app-arrow svg {
+        width: 14px;
+        height: 14px;
       }
 
       .franchise-benefits {
         grid-template-columns: 1fr;
+      }
+
+      .franchise-card {
+        padding: 20px;
+      }
+
+      .franchise-step {
+        gap: 12px;
+      }
+
+      .step-num {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+      }
+
+      .step-content strong {
+        font-size: 0.82rem;
+      }
+
+      .step-content span {
+        font-size: 0.75rem;
+      }
+
+      .franchise-data-item {
+        flex-direction: column;
+        gap: 2px;
+        padding: 8px 0;
+      }
+
+      .fdata-value {
+        text-align: left;
+      }
+
+      .franchise-option-pill {
+        font-size: 0.72rem;
+        padding: 5px 10px;
+      }
+
+      .location-card {
+        padding: 18px;
+      }
+
+      .location-num {
+        font-size: 2.2rem;
+      }
+
+      .location-name {
+        font-size: 1.2rem;
+      }
+
+      .location-address {
+        font-size: 0.8rem;
+      }
+
+      .location-row {
+        font-size: 0.78rem;
+      }
+
+      .contact-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+      }
+
+      .contact-item-text strong {
+        font-size: 0.8rem;
+      }
+
+      .contact-item-text span,
+      .contact-item-text a {
+        font-size: 0.8rem;
+      }
+
+      .social-links {
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .social-link {
+        width: 38px;
+        height: 38px;
+      }
+
+      .contact-callout {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
       }
 
       .footer-inner {
@@ -2584,12 +2764,137 @@
         grid-column: auto;
       }
 
-      .location-card {
-        padding: 20px;
+      .footer-brand-name {
+        font-size: 1.5rem;
       }
 
-      .franchise-card {
-        padding: 22px;
+      .footer-brand-desc {
+        font-size: 0.78rem;
+      }
+
+      .footer-links a {
+        font-size: 0.78rem;
+      }
+
+      .footer-copy {
+        font-size: 0.72rem;
+      }
+
+      .btn {
+        padding: 12px 16px;
+        font-size: 0.75rem;
+      }
+    }
+
+    /* ---- Extra-small (< 280px) ---- */
+    @media (max-width: 280px) {
+      :root {
+        --gutter: 10px;
+        --section-pad: 32px;
+      }
+
+      .hero-h1 {
+        font-size: clamp(26px, 12vw, 40px);
+        margin-bottom: 14px;
+      }
+
+      .hero-tag {
+        font-size: 0.52rem;
+        gap: 6px;
+      }
+
+      .hero-tag-dot {
+        width: 5px;
+        height: 5px;
+      }
+
+      .hero-sub {
+        font-size: 0.75rem;
+        margin-bottom: 14px;
+      }
+
+      .hero-pills {
+        gap: 4px;
+        margin-bottom: 20px;
+      }
+
+      .hero-pill {
+        font-size: 0.52rem;
+        padding: 2px 6px;
+      }
+
+      .section-title {
+        font-size: clamp(22px, 10vw, 32px);
+      }
+
+      .section-label {
+        font-size: 0.56rem;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .section-label::before {
+        width: 14px;
+      }
+
+      .nav-logo-img {
+        height: 28px;
+      }
+
+      .about-stat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-stat strong {
+        font-size: 1.1rem;
+      }
+
+      .about-desc {
+        font-size: 0.82rem;
+      }
+
+      .menu-tabs {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-tab {
+        font-size: 0.68rem;
+        padding: 10px 8px;
+      }
+
+      .delivery-orb {
+        width: 120px;
+        height: 120px;
+      }
+
+      .delivery-emoji svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      .delivery-app {
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+
+      .app-arrow {
+        display: none;
+      }
+
+      .franchise-card-title {
+        font-size: 1rem;
+      }
+
+      .footer-privacy-title {
+        font-size: 0.68rem;
+      }
+
+      .footer-privacy p {
+        font-size: 0.65rem;
+      }
+
+      .mobile-menu a {
+        font-size: clamp(1.4rem, 8vw, 2rem);
       }
     }
   </style>
